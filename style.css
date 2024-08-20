@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #0e0e1a;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.heading {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #ff00ff, 4px 4px #00ffff;
+}
+
+.playerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e3a;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.playerBox .playerName {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow: 2px 2px #ff00ff, 4px 4px #00ffff;
+}
+
+.playerBox input[type="button"],
+.playerBox button {
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #00ffff, 4px 4px #ff00ff;
+}
+
+.playerBox input[type="button"]:hover,
+.playerBox button:hover {
+  background-color: #00ffff;
+}
+
+#vs {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 2px 2px #ff00ff, 4px 4px #00ffff;
+}
+
+#outputBox {
+  background-color: #1e1e3a;
+  border: 1px solid #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+#restart {
+  display: block;
+  margin: 0 auto;
+  background-color: #ff00ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.2s ease-in-out;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px #00ffff, 4px 4px #ff00ff;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes tada {
+    0% {
+      transform: scale(1);
+    }
+    10%, 20% {
+      transform: scale(0.9) rotate(-3deg);
+    }
+    30%, 50%, 70%, 90% {
+      transform: scale(1.1) rotate(3deg);
+    }
+    40%, 60%, 80% {
+      transform: scale(1.1) rotate(-3deg);
+    }
+    100% {
+      transform: scale(1) rotate(0);
+    }
+  }
+  
+  #thinking {
+    animation-name: tada;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  .gameTitle {
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px #00ffff, 4px 4px #ff00ff;
+  }
+  #Player2{
+    text-shadow: 2px 2px #ff00ff, 4px 4px #00ffff;
+  
+  }

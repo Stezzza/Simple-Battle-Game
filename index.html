@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Space Battle Game</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+
+<body onload="setup()">
+  <br>
+  <br>
+  <div class="container">
+    <h1>Chromatic Void</h1>
+    <br>
+    <div class="playerBox" id="player1Box">
+      <h2 class="playerName">Player 1</h2>
+      <div id="healthPlayer1" class="health">Health: 100%</div>
+      <br />
+      <button id="player1Attack" class="btn" onclick="player1Attack()">Attack</button>
+      <br>
+      <button id="player1Heal" class="btn" onclick="player1Heal()">Heal</button>
+      <br>
+      <button id="player1Surrender" class="btn" onclick="player1Surrender()">Surrender</button>
+      <br>
+    </div>
+    <div id="vs">
+      <h2>VS</h2>
+    </div>
+    <div class="playerBox" id="player2Box">
+      <h2 id=Player2>Player 2</h2>
+      <br>
+      <div id="healthPlayer2" class="health">Health: 100%</div>
+      <br>
+      <div id="thinking"></div>
+      <br />
+      <button id="player2Attack" class="btn" onclick="player2Attack()">Attack</button>
+      <br>
+      <button id="player2Heal" class="btn" onclick="player2Heal()">Heal</button>
+      <br>
+      <button id="player2Surrender" class="btn" onclick="player2Surrender()">Surrender</button>
+      <br>
+    </div>
+    <button id="restart" class="btn" onclick="restart()">Restart</button>
+    <br>
+    <div id="outputBox"></div>
+    <div style="clear: both;"></div>
+</body>
+
+</html>
